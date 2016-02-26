@@ -9,10 +9,11 @@
 /* Begin PBXBuildFile section */
 		F5CFC6411C7C58A0008A36A2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F5CFC6401C7C58A0008A36A2 /* main.m */; };
 		F5CFC6441C7C58A0008A36A2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F5CFC6431C7C58A0008A36A2 /* AppDelegate.m */; };
-		F5CFC6471C7C58A0008A36A2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5CFC6461C7C58A0008A36A2 /* ViewController.m */; };
-		F5CFC64A1C7C58A0008A36A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5CFC6481C7C58A0008A36A2 /* Main.storyboard */; };
 		F5CFC64C1C7C58A0008A36A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5CFC64B1C7C58A0008A36A2 /* Assets.xcassets */; };
 		F5CFC64F1C7C58A0008A36A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5CFC64D1C7C58A0008A36A2 /* LaunchScreen.storyboard */; };
+		F5CFC6581C7C5909008A36A2 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5CFC6571C7C5909008A36A2 /* RootViewController.m */; };
+		F5CFC65B1C7C5A4E008A36A2 /* SenderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5CFC65A1C7C5A4E008A36A2 /* SenderViewController.m */; };
+		F5CFC65E1C7C5A67008A36A2 /* ReceiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5CFC65D1C7C5A67008A36A2 /* ReceiveViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,12 +21,15 @@
 		F5CFC6401C7C58A0008A36A2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F5CFC6421C7C58A0008A36A2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F5CFC6431C7C58A0008A36A2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		F5CFC6451C7C58A0008A36A2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		F5CFC6461C7C58A0008A36A2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		F5CFC6491C7C58A0008A36A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F5CFC64B1C7C58A0008A36A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F5CFC64E1C7C58A0008A36A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F5CFC6501C7C58A0008A36A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5CFC6561C7C5909008A36A2 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		F5CFC6571C7C5909008A36A2 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		F5CFC6591C7C5A4E008A36A2 /* SenderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SenderViewController.h; sourceTree = "<group>"; };
+		F5CFC65A1C7C5A4E008A36A2 /* SenderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SenderViewController.m; sourceTree = "<group>"; };
+		F5CFC65C1C7C5A67008A36A2 /* ReceiveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReceiveViewController.h; sourceTree = "<group>"; };
+		F5CFC65D1C7C5A67008A36A2 /* ReceiveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReceiveViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,9 +64,12 @@
 			children = (
 				F5CFC6421C7C58A0008A36A2 /* AppDelegate.h */,
 				F5CFC6431C7C58A0008A36A2 /* AppDelegate.m */,
-				F5CFC6451C7C58A0008A36A2 /* ViewController.h */,
-				F5CFC6461C7C58A0008A36A2 /* ViewController.m */,
-				F5CFC6481C7C58A0008A36A2 /* Main.storyboard */,
+				F5CFC6561C7C5909008A36A2 /* RootViewController.h */,
+				F5CFC6571C7C5909008A36A2 /* RootViewController.m */,
+				F5CFC6591C7C5A4E008A36A2 /* SenderViewController.h */,
+				F5CFC65A1C7C5A4E008A36A2 /* SenderViewController.m */,
+				F5CFC65C1C7C5A67008A36A2 /* ReceiveViewController.h */,
+				F5CFC65D1C7C5A67008A36A2 /* ReceiveViewController.m */,
 				F5CFC64B1C7C58A0008A36A2 /* Assets.xcassets */,
 				F5CFC64D1C7C58A0008A36A2 /* LaunchScreen.storyboard */,
 				F5CFC6501C7C58A0008A36A2 /* Info.plist */,
@@ -110,6 +117,7 @@
 				TargetAttributes = {
 					F5CFC63B1C7C58A0008A36A2 = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 89C22ZWCEN;
 					};
 				};
 			};
@@ -138,7 +146,6 @@
 			files = (
 				F5CFC64F1C7C58A0008A36A2 /* LaunchScreen.storyboard in Resources */,
 				F5CFC64C1C7C58A0008A36A2 /* Assets.xcassets in Resources */,
-				F5CFC64A1C7C58A0008A36A2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,23 +156,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F5CFC6471C7C58A0008A36A2 /* ViewController.m in Sources */,
+				F5CFC65E1C7C5A67008A36A2 /* ReceiveViewController.m in Sources */,
 				F5CFC6441C7C58A0008A36A2 /* AppDelegate.m in Sources */,
+				F5CFC65B1C7C5A4E008A36A2 /* SenderViewController.m in Sources */,
 				F5CFC6411C7C58A0008A36A2 /* main.m in Sources */,
+				F5CFC6581C7C5909008A36A2 /* RootViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		F5CFC6481C7C58A0008A36A2 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F5CFC6491C7C58A0008A36A2 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F5CFC64D1C7C58A0008A36A2 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -261,7 +262,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "蓝牙_ MultipeerConnectivity/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Cer.----MultipeerConnectivity";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -272,7 +275,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "蓝牙_ MultipeerConnectivity/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Cer.----MultipeerConnectivity";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -298,6 +303,7 @@
 				F5CFC6551C7C58A0008A36A2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

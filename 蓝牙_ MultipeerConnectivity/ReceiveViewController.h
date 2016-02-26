@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+@import MultipeerConnectivity;
 
-@interface ReceiveViewController : UIViewController
+@interface ReceiveViewController : UIViewController<MCSessionDelegate, MCBrowserViewControllerDelegate>
 
 @end

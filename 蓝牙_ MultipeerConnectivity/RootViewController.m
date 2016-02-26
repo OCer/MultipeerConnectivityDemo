@@ -7,6 +7,8 @@
 //
 
 #import "RootViewController.h"
+#import "SenderViewController.h"
+#import "ReceiveViewController.h"
 
 @interface RootViewController ()
 
@@ -14,24 +16,33 @@
 
 @implementation RootViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    [self setTitle:@"WIFI/蓝牙"];
+    
+    UIBarButtonItem *sender = [[UIBarButtonItem alloc] initWithTitle:@"发送" style:UIBarButtonItemStyleDone target:self action:@selector(sender:)];
+    [[self navigationItem] setRightBarButtonItem:sender animated:YES];
+    UIBarButtonItem *receive = [[UIBarButtonItem alloc] initWithTitle:@"接受" style:UIBarButtonItemStyleDone target:self action:@selector(receive:)];
+    [[self navigationItem] setLeftBarButtonItem:receive animated:YES];
+
+    return;
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)sender:(id)temp
+{
+    SenderViewController *sender = [[SenderViewController alloc] init];
+    [[self navigationController] pushViewController:sender animated:YES];
+    
+    return;
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)receive:(id)temp
+{
+    ReceiveViewController *receive = [[ReceiveViewController alloc] init];
+    [[self navigationController] pushViewController:receive animated:YES];
+    
+    return;
 }
-*/
 
 @end

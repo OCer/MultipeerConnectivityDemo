@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+@import MultipeerConnectivity;
 
-@interface SenderViewController : UIViewController
+@interface SenderViewController : UIViewController<MCSessionDelegate, MCAdvertiserAssistantDelegate>
 
 @end
